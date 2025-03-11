@@ -1,0 +1,144 @@
+At this checkpoint you are asked to write an algorithm that fulfills the following description:
+Description:
+Problem 1
+ 
+Given two sets of elements, find the sum of all distinct elements from the set. In other words, find the sum of all elements which are present in either of the given set.
+Example:
+Set 1 : [3, 1, 7, 9], Set 2: [2, 4, 1, 9, 3]
+Output: 13 (distinct elements 4, 7, 2 )
+Give a solutions to this problem, using arrays
+
+Instructions
+Problem 1
+Solution  with an array.
+Initialize sum = 0. 
+Compare each element of set one with the second set and if element is not present then add that element to sum. 
+Then do the vice versa to add elements from the second set.
+
+
+Problem 1 Solution using Arrays
+Input:
+- Two arrays set1 and set2 representing the two sets of elements.
+
+Output:
+- The sum of all distinct elements from the two sets.
+
+Algorithm:
+1. Initialize sum to 0.
+2. Iterate through each element x in set1.
+    - Check if x is not present in set2.
+    - If x is not present, add x to sum.
+3. Iterate through each element y in set2.
+    - Check if y is not present in set1.
+    - If y is not present, add y to sum.
+4. Return sum as the result.
+
+Example Implementation:
+Here is an example implementation in a programming language:
+
+
+function sumDistinctElements(set1, set2) {
+  let sum = 0;
+  
+  // Iterate through set1 and add distinct elements to sum
+  for (let x of set1) {
+    if (!set2.includes(x)) {
+      sum += x;
+    }
+  }
+  
+  // Iterate through set2 and add distinct elements to sum
+  for (let y of set2) {
+    if (!set1.includes(y)) {
+      sum += y;
+    }
+  }
+  
+  return sum;
+}
+
+// Example usage:
+let set1 = [3, 1, 7, 9];
+let set2 = [2, 4, 1, 9, 3];
+console.log(sumDistinctElements(set1, set2)); // Output: 13
+
+
+
+Description:
+Problem 2 
+You are asked to write an algorithm that fulfill the following: 
+Name: Dot product
+Description:
+Write a procedure, called dot_product which calculates in the variable ps, the dot(scalar) product of v1 and v2 (v1 and v2 are vectors of IR)
+Write an algorithm which determines, for n pairs of given vectors, whether two vectors of given IR are orthogonal, by calling the procedure defined in the previous question. The dot product of two orthogonal vectors is zero.
+Modify the previous algorithm if you use a dot_product function instead of a procedure.
+
+
+Instructions
+Problem 2
+While creating your algorithm, you should: 
+Use array for presenting the vector.
+Use nested loop (a loop inside another if you want)
+Use different types of passing parameters
+
+
+Problem 2 Solution
+Input:
+- Two arrays v1 and v2 representing the two vectors.
+- An integer n representing the number of pairs of vectors.
+
+Output:
+- A boolean value indicating whether the two vectors are orthogonal.
+
+Algorithm:
+Procedure dot_product
+1. Initialize ps to 0.
+2. Iterate through each element i of the vectors.
+    - Multiply the corresponding elements of v1 and v2 and add the result to ps.
+3. Return ps as the dot product.
+
+Main Algorithm
+1. For each pair of vectors v1 and v2:
+    - Call the dot_product procedure to calculate the dot product ps.
+    - If ps is zero, then the vectors are orthogonal, so print "Orthogonal" or return True.
+    - Otherwise, print "Not Orthogonal" or return False.
+
+Modified Algorithm using dot_product Function
+If we use a dot_product function instead of a procedure, we can modify the algorithm as follows:
+
+1. For each pair of vectors v1 and v2:
+    - Call the dot_product function to calculate the dot product ps.
+    - If ps is zero, then the vectors are orthogonal, so print "Orthogonal" or return True.
+    - Otherwise, print "Not Orthogonal" or return False.
+
+Example Implementation:
+Here is an example implementation in a programming language:
+
+
+// Procedure dot_product
+procedure dot_product(v1, v2, ps)
+  ps = 0
+  for i = 0 to length(v1) - 1
+    ps += v1[i] * v2[i]
+
+// Main Algorithm
+for i = 0 to n - 1
+  dot_product(v1[i], v2[i], ps)
+  if ps == 0
+    print "Orthogonal"
+  else
+    print "Not Orthogonal"
+
+// Modified Algorithm using dot_product Function
+function dot_product(v1, v2)
+  ps = 0
+  for i = 0 to length(v1) - 1
+    ps += v1[i] * v2[i]
+  return ps
+
+for i = 0 to n - 1
+  ps = dot_product(v1[i], v2[i])
+  if ps == 0
+    print "Orthogonal"
+  else
+    print "Not Orthogonal"
