@@ -1,0 +1,26 @@
+Variables and Initialization
+- char: the input character
+- sentence_length: the length of the sentence (initialized to 0)
+- word_count: the number of words in the sentence (initialized to 0)
+- vowel_count: the number of vowels in the sentence (initialized to 0)
+
+Algorithm
+1. Read the first character from the sentence into char.
+2. While char is not the point (.):
+
+    - Increment sentence_length.
+    - If char is a space, increment word_count.
+    - If char is a vowel (A, E, I, O, U, a, e, i, o, u), increment vowel_count.
+    - Read the next character from the sentence into char.
+3. Increment sentence_length (to count the point at the end).
+4. If the sentence is not empty (i.e., sentence_length > 1), increment word_count (to count the last word).
+5. Output the values of sentence_length, word_count, and vowel_count.
+
+Example Use Case
+Input: "Hello World."
+
+Output:
+
+- Sentence length: 13
+- Word count: 2
+- Vowel count: 3
