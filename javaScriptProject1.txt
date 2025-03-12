@@ -1,0 +1,247 @@
+What You're Aiming For
+
+In this checkpoint we are going to play the Edabit problem-solving game. Your challenge here is to solve tasks  & collect points. 
+
+The challenge can be found in the link below :
+https://docs.google.com/spreadsheets/d/1pc2MB6LoHJUebchLihoyyEJmO4fP8OOGfOlhajiziOw/edit?gid=0#gid=0
+
+
+Instructions
+
+Go to the Edabit website. Link
+Create an account.
+Try to collect maximum points while switching between tasks level ( easy, medium...)
+
+
+                            //Your challenge here is to solve tasks  & collect points. 
+Find the Smallest and Biggest Numbers
+10
+10
+10
+10
+20
+20
+20
+20
+20
+20
+
+
+  To find the smallest and biggest numbers in the given list:
+
+Step 1: Identify the numbers in the list
+The numbers in the list are: 10, 10, 10, 10, 10, 20, 20, 20, 20, 20, 20.
+
+Step 2: Find the smallest number
+The smallest number in the list is 10.
+
+Step 3: Find the biggest number
+The biggest number in the list is 20.
+
+The final answer is:
+Smallest number: 10
+Biggest number: 20
+
+
+                                        //Your challenge here is to solve tasks  & collect points. 
+Find the Sum of cubes 
+10
+10
+10
+10
+20
+20
+20
+20
+20
+20
+
+
+
+  To find the sum of cubes, we need to calculate the cube of each number and then add them up.
+
+Step 1: Calculate the cube of each number
+The cubes of the numbers are:
+10³ = 1000
+10³ = 1000
+10³ = 1000
+10³ = 1000
+20³ = 8000
+20³ = 8000
+20³ = 8000
+20³ = 8000
+20³ = 8000
+20³ = 8000
+
+Step 2: Add up the cubes
+The sum of the cubes is:
+1000 + 1000 + 1000 + 1000 + 8000 + 8000 + 8000 + 8000 + 8000 + 8000 = 10000 + 48000 = 58000
+
+The final answer is: 58000
+
+
+                                          //Your challenge here is to solve tasks  & collect points. 
+Filter out strings from an array 
+10
+10
+10
+10
+20
+20
+20
+20
+20
+20
+
+
+Since there are no strings in the given array, the filtered array will be the same as the original array:
+
+The filtered array is: [10, 10, 10, 10, 20, 20, 20, 20, 20, 20]
+
+
+  To filter out strings from an array, you can use the typeof operator to check the data type of each element and only include elements that are numbers.
+
+Here is an example:
+
+
+function filterOutStrings(arr) {
+  return arr.filter(element => typeof element === 'number');
+}
+
+// Test the function
+let array = [10, 20, 'hello', 30, 'world', 40];
+let filteredArray = filterOutStrings(array);
+console.log(filteredArray); // Output: [10, 20, 30, 40]
+
+
+
+
+                                              //Your challenge here is to solve tasks  & collect points. 
+Is the number symmetrical
+10
+10
+10
+10
+20
+20
+20
+20
+20
+20
+
+
+
+To check if the number is symmetrical, we need to compare the number with its reverse.
+
+First, let's combine the numbers into a single number:
+
+10 10 10 10 20 20 20 20 20 20
+
+becomes:
+
+10101010102020202020
+
+Now, let's reverse the number:
+
+02020202010101010101
+
+Since the original number is not the same as its reverse, the number is not symmetrical.
+
+However, if we consider the number as a sequence of digits, we can see that the sequence is symmetrical around the middle:
+
+10 10 10 10 20 20 20 20 20 20
+
+So, in this sense, the sequence is symmetrical.
+
+
+  
+
+
+
+                                                //Your challenge here is to solve tasks  & collect points. 
+array of multiples
+10
+10
+10
+10
+20
+20
+20
+20
+20
+20
+
+
+Based on the given array:
+
+10 10 10 10 20 20 20 20 20 20
+
+I'll create an array of multiples of 10:
+
+[10, 20, 30, 40, 50, ...]
+
+  
+
+
+                                                  //Your challenge here is to solve tasks  & collect points. 
+25-mile marathon
+10
+10
+10
+10
+20
+20
+20
+20
+20
+20
+
+
+To determine the total number of miles completed in the 25-mile marathons:
+
+10 + 10 + 10 + 10 = 40
+20 + 20 + 20 + 20 + 20 + 20 = 120
+
+Total miles completed = 40 + 120 = 160 miles
+
+Since each marathon is 25 miles, the total number of marathons completed is:
+
+160 miles / 25 miles per marathon = 6.4 marathons
+
+
+  
+
+  
+                                                //Your challenge here is to solve tasks  & collect points. 
+Square every digit
+10
+10
+10
+10
+20
+20
+20
+20
+20
+20
+
+
+To square every digit, I'll first separate the numbers into individual digits, square each digit, and then combine them.
+
+Here's the result:
+
+10 -> 1² = 1, 0² = 0 -> 1 0
+10 -> 1² = 1, 0² = 0 -> 1 0
+10 -> 1² = 1, 0² = 0 -> 1 0
+10 -> 1² = 1, 0² = 0 -> 1 0
+20 -> 2² = 4, 0² = 0 -> 4 0
+20 -> 2² = 4, 0² = 0 -> 4 0
+20 -> 2² = 4, 0² = 0 -> 4 0
+20 -> 2² = 4, 0² = 0 -> 4 0
+20 -> 2² = 4, 0² = 0 -> 4 0
+20 -> 2² = 4, 0² = 0 -> 4 0
+
+The resulting array is:
+
+[1, 0, 1, 0, 1, 0, 1, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0]
+  
